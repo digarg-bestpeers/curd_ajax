@@ -1,0 +1,10 @@
+{% for student in students %}
+	<div>
+		<h3>Student Name: {{student.name}}</h3>
+		<h3>Student Roll Number: {{student.rollno}}</h3>
+		<h3>Student Course: {{student.course}}</h3>
+		<a href="" class="btn btn-warning btn-edit" data-id="{{student.id}}">Edit</a>
+		<a href="" class="btn btn-danger btn-del" data-id="{{student.id}}">Delete</a>
+		<hr>
+	</div>
+{% endfor %}
